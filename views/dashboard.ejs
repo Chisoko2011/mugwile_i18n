@@ -1,0 +1,87 @@
+Dashboard!<br>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<br>
+You can log a case here!<br>
+<br>
+
+<%= __('name') %> <input type="text" id="offender_name"/> <br>
+<br>
+
+<%= __('email') %> <input type="text" id="offender_email"/> <br>
+<br>
+
+<%= __('location') %> <input type="text" id="offender_location"/> <br>
+<br>
+
+<%= __('offense') %> <input type="text" id="offender_offense"/> <br>
+<br>
+
+<button id="submitbutton"> <%= __('submit') %> </button>
+
+
+
+
+
+<script>
+
+$( "#submitbutton" ).click(function(event) {
+  
+  event.preventDefault();
+  
+  // grab the values
+  var offenderName = $('#offender_name').val();
+  var offenderEmail = $('#offender_email').val();
+  var offenderLocation = $('#offender_location').val();
+  var offenderOffense = $('#offender_offense').val();
+  
+  alert("offender_name" + offender_name);
+  
+  
+  // send the data to the server-side
+  $.post( "/putInDatabase", {  offendername : offenderName,  offenderemail: offenderEmail, offenderlocation: offenderLocation, offenderoffense: offenderOffense })
+  .done(function( data ) {
+    alert( "Data Loaded: " + data );
+  });
+  
+  
+  
+  
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+$.post("/getusers", ()) 
+	.done(function(data) {
+ 
+  
+});
+ 
+  
+    
+ )};
+
+
+
+</script>

@@ -1,0 +1,12 @@
+{
+	"password": "le mot de passe",
+	"login": "Connexion",
+	"username": "Nom d'utilisateur",
+	"name": "Nom",
+	"email": "E-mail",
+	"location": "emplacement",
+	"offense": "infraction",
+	"submit": "nous faire parvenir",
+	"dashboard": "Tableau de bord",
+	"message": "Vous pouvez enregistrer un cas ici !"
+}

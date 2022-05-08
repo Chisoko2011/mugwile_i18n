@@ -1,0 +1,13 @@
+{
+	"password": "password",
+	"login": "login",
+	"username": "username",
+	"name": "name",
+	"email": "email",
+	"location": "location",
+	"offense": "offense",
+	"submit": "submit"
+	"dashboard": "dashboard",
+	"message": "You can log a case here!"
+	
+}
