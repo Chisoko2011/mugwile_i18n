@@ -16,7 +16,7 @@ var http = require('http');
 i18n.configure({
 	locales: [ 'en','de','fr'],
   directory: path.join(__dirname, 'locales'),
-  defaultLocale: 'de'
+  defaultLocale: 'en'
 })
 
 app.use(i18n.init);
